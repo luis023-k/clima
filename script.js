@@ -13,7 +13,7 @@ const evaporationSlider = document.getElementById('evaporationSpeed');
 
 const cloud = document.getElementById('cloud');
 let cloudX = cloud.offsetLeft + cloud.offsetWidth / 2;
-const cloudWidth = 200;
+const cloudWidth = 2000;
 
 let drops = [];
 let puddleHeight = 0;
@@ -73,7 +73,7 @@ function updateVapor() {
 }
 
 function drawPuddle() {
-  ctx.fillStyle = '#0077aa';
+  ctx.fillStyle = '#57e6f0ea';
   ctx.fillRect(cloudX - cloudWidth / 2, canvas.height - canvas.height * 0.1 - puddleHeight, cloudWidth, puddleHeight);
 }
 
